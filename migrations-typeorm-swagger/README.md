@@ -6,6 +6,8 @@ Here we will see how to work with TypeORM migrations and creating Swagger API do
 
 ## Create a migration
 
+_Note: Make sure you created the database. In this example it is **mytestdb**_
+
 Run the below command to create a migration:
 
 ```bash
