@@ -1,6 +1,6 @@
 # About this Demo
 
-Here we will see how to work with TypeORM migrations and creating Swagger API documentation.
+Here we will see how to work with TypeORM migrations.
 
 # Migrations
 
