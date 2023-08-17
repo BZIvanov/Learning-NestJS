@@ -18,3 +18,4 @@ _Note: Only the essential files are kept for these demos. For fully working exam
 - **migrations-typeorm** - contains example of the following tech stack: `typeorm`, `postgresql`, `status codes` and how to work with `migrations`
 - **passport-local-inmemory-sessions** - contains example of the following tech stack `passport-local`, `express-session`, `typeorm`, `postgresql`, `bcrypt` and how to work with `authentication with in-memory sessions`
 - **swagger-documentation** - contains example of the following tech stack: `swagger` and how to work with `api documentation`
+- **rate-limits** - contains example of the following tech stack: `throttler` and how to work with `rate limit`
