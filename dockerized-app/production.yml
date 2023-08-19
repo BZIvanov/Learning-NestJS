@@ -1,0 +1,6 @@
+# this will partially overrider docker-compose file with what is specified here
+# in this example we will only override the target image
+services:
+  my-api:
+    build:
+      target: devenv

@@ -1,0 +1,7 @@
+services:
+  my-api:
+    build:
+      target: testenv-watch
+    # sync git on our local machine with git in the container
+    volumes:
+      - .git:/app/.git

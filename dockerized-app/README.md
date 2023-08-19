@@ -1,3 +1,7 @@
+# About this Demo
+
+Here we will see how to work with Nest.js inside Docker containers. In the demo also running unit tests are included.
+
 # Multi-stage docker setup
 
 ## Running the application
