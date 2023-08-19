@@ -18,7 +18,12 @@
     "test:debug": "STAGE=dev node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "STAGE=dev jest --config ./test/jest-e2e.json",
     "docker-compose:dev-start": "docker compose up --build",
-    "docker-compose:dev-stop": "docker compose down"
+    "docker-compose:dev-stop": "docker compose stop",
+    "docker-compose:test": "docker compose -f docker-compose.yml -f test.yml up --build --exit-code-from my-api",
+    "docker-compose:test-cov": "docker compose -f docker-compose.yml -f test-cov.yml up --build --exit-code-from my-api",
+    "docker-compose:test-watch": "docker compose -f docker-compose.yml -f test-watch.yml up --build",
+    "docker-compose:prod-start": "docker compose -f docker-compose.yml -f production.yml up --build",
+    "docker-compose:prod-stop": "docker compose -f docker-compose.yml -f production.yml stop"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
