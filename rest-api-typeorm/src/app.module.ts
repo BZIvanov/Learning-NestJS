@@ -7,7 +7,8 @@ import { BooksModule } from './books/books.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: '.env',
+      // dynamically load different env file depending on the environment variable which is provided for the scripts in the package.json file
+      envFilePath: [`.env.${process.env.NODE_ENV || 'development'}`],
       isGlobal: true,
     }),
     TypeOrmModule.forRootAsync({
