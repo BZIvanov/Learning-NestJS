@@ -23,6 +23,7 @@ import { BooksModule } from './books/books.module';
           database: configService.get<string>('DATABASE_NAME'),
           autoLoadEntities: true,
           synchronize: true,
+          // dropSchema: configService.get<string>('NODE_ENV') === 'test', // drop the database everytime we are running e2e test
           logging: 'all', // will log all raw queries we are making to the database
           logger: 'file', // will log all queries in a file instead of the console. By default the file is named ormlogs.log and placed in the root folder
         };
