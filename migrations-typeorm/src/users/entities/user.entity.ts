@@ -5,18 +5,19 @@ export class User {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ nullable: false, unique: true })
   email: string;
 
-  @Column()
-  first_name: string;
+  @Column({ nullable: false, name: 'first_name' })
+  firstName: string;
 
-  @Column()
-  last_name: string;
+  @Column({ nullable: false, name: 'last_name' })
+  lastName: string;
 
-  @Column()
-  city: string;
+  @Column({ nullable: true })
+  city?: string;
 
-  @Column()
-  bad_column: string;
+  // this is example for the bad migration which we reverted
+  // @Column()
+  // bad_column: string;
 }

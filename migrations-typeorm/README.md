@@ -63,7 +63,7 @@ npm run migration:revert
 
 Reverting migration will automatically apply the changes to the database without us explicitly running it.
 
-We will still have the migration file in our migrations folder even after the revert, but migration table in the database will drop the last record. Inspect the migrations table in the database for more info.
+We will still have the migration file in our migrations folder even after the revert, but migration table in the database will drop the last record so in case you want to completely remove it also remove the migrations file. Inspect the migrations table in the database for more info.
 
 With the above said it means, that if we want to revert 2 changes with the 2 added columns we have to run the revert command twice.
 
