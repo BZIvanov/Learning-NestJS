@@ -1,12 +1,10 @@
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export class AddedCityColumn1691482688841 implements MigrationInterface {
-  name = 'AddedCityColumn1691482688841';
+export class AddedCityColumn1693076794880 implements MigrationInterface {
+  name = 'AddedCityColumn1693076794880';
 
   public async up(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.query(
-      `ALTER TABLE "user" ADD "city" character varying NOT NULL`,
-    );
+    await queryRunner.query(`ALTER TABLE "user" ADD "city" character varying`);
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
