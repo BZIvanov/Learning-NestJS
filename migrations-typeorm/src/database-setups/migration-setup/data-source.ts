@@ -14,7 +14,7 @@ const dataSourceOptions: DataSourceOptions = {
   password: process.env.DATABASE_PASSWORD,
   database: process.env.DATABASE_NAME,
   entities: ['dist/**/*.entity.js'], // here will be our js entity files. We are building the project to get the js version of the files, which is needed for typeorm
-  migrations: ['dist/db/migrations/*.js'], // this is the path to our migration in the dist folder after we build the app
+  migrations: ['dist/database-setups/migration-setup/migrations/*.js'], // this is the path to our migration in the dist folder after we build the app
 };
 
 export default new DataSource(dataSourceOptions);
