@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Comment } from '../../comments/entities/comment.entity';
 
 @Entity()
 export class User {
@@ -17,7 +18,10 @@ export class User {
   @Column({ nullable: true })
   city?: string;
 
-  // this is example for the bad migration which we reverted
+  // this is example for the bad migration which we revert
   // @Column()
   // bad_column: string;
+
+  @OneToMany(() => Comment, (comment) => comment.user)
+  comments: Comment[];
 }
