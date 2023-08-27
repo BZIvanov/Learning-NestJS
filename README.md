@@ -21,3 +21,4 @@ _Note: Only the essential files are kept for these demos. For fully working exam
 - **rate-limits** - contains example of the following tech stack: `throttler` and how to work with `rate limit`
 - **dockerized-app** - contains example of the following tech stack: `docker`, `postgresql`, `pgadmin` and how to work with `docker images and containers`
 - **rest-api-typeorm** - contains example of the following tech stack: `postgresql`, `typeorm` and how to work with `rest api`
+- **remove-response-prop-interceptor** - contains example of the following tech stack: `interceptors`, `rxjs` and how to work with `custom interceptor`
