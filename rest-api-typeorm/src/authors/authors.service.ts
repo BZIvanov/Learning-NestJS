@@ -46,9 +46,6 @@ export class AuthorsService {
       });
     }
 
-    // this is how we can log the raw query
-    // console.log(query.getSql())
-
     return await query.getMany();
   }
 
