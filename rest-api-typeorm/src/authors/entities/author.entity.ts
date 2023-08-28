@@ -19,7 +19,8 @@ export class Author {
   @Column({ nullable: false, name: 'last_name' })
   lastName: string;
 
-  @Column({ nullable: true, unique: true })
+  // email will not be selected as part of the queries, because we don't want to return it as part of response
+  @Column({ nullable: true, unique: true, select: false })
   email?: string;
 
   @Column({ nullable: true })
