@@ -3,4 +3,4 @@
 services:
   my-api:
     build:
-      target: devenv
+      target: prodenv
