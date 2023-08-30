@@ -31,6 +31,6 @@ ENV NODE_ENV=production
 RUN npm install --frozen-lockfile --production
 COPY . .
 # here we will install nest cli, because we are not going to have the dev dependencies on the production image
-RUN npm install global @nestjs/cli
+RUN npm install -g @nestjs/cli
 RUN npm run build
 CMD ["npm", "run", "start:prod"]
