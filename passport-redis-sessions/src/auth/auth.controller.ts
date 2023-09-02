@@ -23,13 +23,29 @@ export class AuthController {
   @UseGuards(LocalAuthGuard)
   @Post('login')
   login(@Request() req: Request & { session: any; user: any }) {
+    req.session.userId = req.user.id;
     return req.user;
   }
 
   @Get('logout')
-  logout(@Request() req) {
-    req.session.destroy();
-    return { message: 'Logged out' };
+  async logout(@Request() req: any): Promise<{ message: string }> {
+    try {
+      await new Promise<void>((resolve, reject) => {
+        req.logout((err: any) => {
+          if (err) {
+            console.error('Error during logout:', err);
+            return reject('Logout error');
+          }
+          resolve();
+        });
+      });
+
+      req.session.destroy();
+      return { message: 'Logged out successfully' };
+    } catch (error) {
+      console.error('Error during logout:', error);
+      return { message: 'Logout error' };
+    }
   }
 
   @UseGuards(AuthenticatedGuard)
