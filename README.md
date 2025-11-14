@@ -1,6 +1,10 @@
 # Learning NestJS
 
-Learning materials for NestJS.
+This repository contains learning materials for NestJS.
+
+Nest (NestJS) is a framework for building efficient, scalable Node.js server-side applications.
+
+Click [here](https://docs.nestjs.com/) for the official docs.
 
 ## NestJS Basic concepts
 
@@ -24,3 +28,7 @@ _Note: Only the essential files are kept for these demos. For fully working exam
 - **dockerized-app** - contains example of the following tech stack: `docker`, `postgresql`, `pgadmin` and how to work with `docker images and containers`
 - **rest-api-typeorm** - contains example of the following tech stack: `postgresql`, `typeorm` and how to work with `rest api`
 - **remove-response-prop-interceptor** - contains example of the following tech stack: `interceptors`, `rxjs` and how to work with `custom interceptor`
+
+## Content of this repo
+
+1. **FirstSteps**
