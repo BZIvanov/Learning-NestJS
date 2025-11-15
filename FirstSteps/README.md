@@ -21,3 +21,4 @@ You can read more [here](https://docs.nestjs.com/cli/usages).
 ## Content of this section
 
 - **blank-app**
+- **custom-controller**
