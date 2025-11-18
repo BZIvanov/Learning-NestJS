@@ -4,3 +4,4 @@
 
 - **data-validation-with-pipes**
 - **globally-enabling-validation-pipe**
+- **custom-pipe-validation**
