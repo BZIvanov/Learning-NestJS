@@ -6,6 +6,10 @@ Nest (NestJS) is a framework for building efficient, scalable Node.js server-sid
 
 Click [here](https://docs.nestjs.com/) for the official docs.
 
+## Prerequisites
+
+A solid understanding of TypeScript is required. If you're new to TypeScript, start with [Learning-Typescript](https://github.com/BZIvanov/Learning-Typescript) before diving into Nest.js.
+
 ## NestJS Basic concepts
 
 #### Module Decorator Properties
@@ -32,4 +36,5 @@ _Note: Only the essential files are kept for these demos. For fully working exam
 ## Content of this repo
 
 1. **First Steps**
-2. **Data Validation**
+2. **Fundamentals**
+3. **Data Validation**
