@@ -37,4 +37,5 @@ _Note: Only the essential files are kept for these demos. For fully working exam
 
 1. **First Steps**
 2. **Fundamentals**
-3. **Data Validation**
+3. **Modules**
+4. **Data Validation**
