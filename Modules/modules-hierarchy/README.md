@@ -35,3 +35,11 @@ Each module has one minimal controller and one simple service.
 **How to structure a multi-module NestJS application**
 
 CompanyModule is the root, just like AppModule in real projects.
+
+## Module relationships
+
+In **NestJS**, module _folder placement_ in the file system does **NOT** create a parent–child relationship. **Module relationships are created ONLY through `imports` and `exports` inside the `@Module()` decorator — not through directory structure**.
+
+### Key takeaway
+
+**A module becomes a child only if it imports another module**. Everything else is just folder organization.
