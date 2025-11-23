@@ -2,4 +2,4 @@
 
 ## Content of this section
 
-- **basic-data-persistence**
+- **TypeORM**
