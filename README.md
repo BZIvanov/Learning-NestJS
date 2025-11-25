@@ -41,3 +41,4 @@ _Note: Only the essential files are kept for these demos. For fully working exam
 4. **Data Validation**
 5. **Data Persistence**
 6. **Interceptors**
+7. **Authentication and Authorization**
