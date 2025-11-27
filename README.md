@@ -40,5 +40,6 @@ _Note: Only the essential files are kept for these demos. For fully working exam
 3. **Modules**
 4. **Data Validation**
 5. **Data Persistence**
-6. **Interceptors**
-7. **Authentication and Authorization**
+6. **Decorators**
+7. **Interceptors**
+8. **Authentication and Authorization**
