@@ -38,9 +38,10 @@ _Note: Only the essential files are kept for these demos. For fully working exam
 1. **First Steps**
 2. **Fundamentals**
 3. **Modules**
-4. **Data Validation**
-5. **Data Persistence**
-6. **Decorators**
-7. **Interceptors**
-8. **Authentication and Authorization**
-9. **Testing**
+4. **Configuration**
+5. **Data Validation**
+6. **Data Persistence**
+7. **Decorators**
+8. **Interceptors**
+9. **Authentication and Authorization**
+10. **Testing**
