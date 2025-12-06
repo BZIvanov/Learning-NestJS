@@ -4,11 +4,12 @@ import { ApiProperty } from '@nestjs/swagger';
 @Entity()
 export class Post {
   @PrimaryGeneratedColumn()
+  @ApiProperty({ example: 1 })
   id: number;
 
   @ApiProperty({
     example: 'My post text',
-    description: 'Some text prop',
+    description: 'Content of the post',
   }) // info for the specific property, we can see this after expanding a specific endpoint
   @Column({ nullable: false })
   content: string;

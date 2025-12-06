@@ -41,7 +41,8 @@ _Note: Only the essential files are kept for these demos. For fully working exam
 4. **Configuration**
 5. **Data Validation**
 6. **Data Persistence**
-7. **Decorators**
-8. **Interceptors**
-9. **Authentication and Authorization**
-10. **Testing**
+7. **APIDocumentation**
+8. **Decorators**
+9. **Interceptors**
+10. **Authentication and Authorization**
+11. **Testing**
