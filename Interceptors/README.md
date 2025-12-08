@@ -28,3 +28,4 @@ Interceptors can be applied on:
 
 - **basic-interceptor**
 - **configurable-interceptor**
+- **remove-response-props**
